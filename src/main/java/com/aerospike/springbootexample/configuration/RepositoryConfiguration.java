@@ -25,6 +25,6 @@ public class RepositoryConfiguration {
     }
 
     public @Bean AerospikeTemplate aerospikeTemplate() { 
-        return new AerospikeTemplate(aerospikeClient(), "test");
+        return new AerospikeTemplate(aerospikeClient(), "projet");
     }
 }

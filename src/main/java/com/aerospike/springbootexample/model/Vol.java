@@ -12,6 +12,7 @@ public class Vol {
 	private Date dateArrivee;
 	private int duree;
 	private int nombrePlaces;
+	private boolean flag_reservation;
 	public Integer getId() {
 		return id;
 	}
@@ -42,4 +43,11 @@ public class Vol {
 	public void setNombrePlaces(int nombrePlaces) {
 		this.nombrePlaces = nombrePlaces;
 	}
+	public boolean isFlag_reservation() {
+		return flag_reservation;
+	}
+	public void setFlag_reservation(boolean flag_reservation) {
+		this.flag_reservation = flag_reservation;
+	}
+	
 }
