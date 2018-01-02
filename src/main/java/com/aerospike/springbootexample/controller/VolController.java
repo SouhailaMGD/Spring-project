@@ -38,7 +38,7 @@ public class VolController {
  
 	@RequestMapping(value = "/updateVol/{Id}", method = RequestMethod.POST)
 	public Vol updateVol(@RequestBody Vol vol,@PathVariable("Id") Integer Id) {
-		volService.deleteVol(Id);
+	
 		return volService.saveVol(vol);
 	}
 	

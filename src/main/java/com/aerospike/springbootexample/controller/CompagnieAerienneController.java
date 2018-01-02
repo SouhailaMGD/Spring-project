@@ -39,7 +39,6 @@ public class CompagnieAerienneController {
  
 	@RequestMapping(value = "/updatecompagnieaerienne/{Id}", method = RequestMethod.POST)
 	public CompagnieAerienne updatecompagnieaerienne(@RequestBody CompagnieAerienne compagnieaerienne,@PathVariable("Id") Integer Id) {
-		compagnieaerienneService.deleteCompagnieAerienne(Id);
 		return compagnieaerienneService.saveCompagnieAerienne(compagnieaerienne);
 	}
 	

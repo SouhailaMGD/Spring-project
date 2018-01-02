@@ -35,14 +35,15 @@ public class ReservationController {
 		return reservationService.saveReservation(reservation);
 	}
  
-	@RequestMapping(value = "/updatereservation/{Id}", method = RequestMethod.PUT)
+	@RequestMapping(value = "/updatereservation/{Id}", method = RequestMethod.POST)
 	public Reservation updatereservation(@RequestBody Reservation reservation,@PathVariable("Id") Integer Id) {
-		//reservationService.deleteReservation(Id);
+		
 		return reservationService.saveReservation(reservation);
 	}
 	
 	@RequestMapping(value = "/deletereservation/{Id}", method = RequestMethod.GET)
 	public void deletereservation(@PathVariable("Id") Integer Id) {
+		//System.out.println(Id);
 		reservationService.deleteReservation(Id);
 	}
 }

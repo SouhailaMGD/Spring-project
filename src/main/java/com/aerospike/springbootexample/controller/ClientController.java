@@ -38,7 +38,6 @@ public class ClientController {
  
 	@RequestMapping(value = "/updateclient/{Id}", method = RequestMethod.POST)
 	public Client updateclient(@RequestBody Client client,@PathVariable("Id") Integer Id) {
-		clientService.deleteClient(Id);
 		return clientService.saveClient(client);
 	}
 	
