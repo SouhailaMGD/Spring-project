@@ -7,15 +7,18 @@ import org.springframework.data.annotation.Id;
 public class Reservation {
 
 	@Id
-	private long idReservation;
-	private Date date;
+	private long id;
+	private String date;
 	private int nbPlaces;
 	
-	public Reservation(int nbPlaces) {
-		super();
-		this.nbPlaces = nbPlaces;
+	public long getId() {
+		return id;
 	}
-	
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
 	public int getNbPlaces() {
 		return nbPlaces;
 	}
@@ -25,13 +28,14 @@ public class Reservation {
 		this.nbPlaces = nbPlaces;
 	}
 
-
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
-	
-	
-	public void setDate(Date date) {
-		this.date=date;
+
+	public void setDate(String date) {
+		this.date = date;
 	}
+
+
+
 }

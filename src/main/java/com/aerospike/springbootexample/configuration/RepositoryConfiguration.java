@@ -11,7 +11,7 @@ import com.aerospike.client.AerospikeClient;
 import com.aerospike.client.policy.ClientPolicy;
 
 @Configuration
-@EnableAerospikeRepositories(basePackages = {"com.aerospike.spring.boot.example.repository"})
+@EnableAerospikeRepositories(basePackages = {"com.aerospike.springbootexample.repository"})
 @EnableAutoConfiguration
 @EnableTransactionManagement
 public class RepositoryConfiguration {
@@ -25,6 +25,6 @@ public class RepositoryConfiguration {
     }
 
     public @Bean AerospikeTemplate aerospikeTemplate() { 
-        return new AerospikeTemplate(aerospikeClient(), "projet");
+        return new AerospikeTemplate(aerospikeClient(), "test");
     }
 }

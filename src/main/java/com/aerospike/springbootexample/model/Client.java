@@ -11,15 +11,12 @@ public class Client {
 	private String adresse;
 	private String numTel;
 
-	public Client() {
+	public long getId() {
+		return id;
 	}
 
-	public Client(String nom, String prenom, String adresse, String numTel) {
-		super();
-		this.nom = nom;
-		this.prenom = prenom;
-		this.adresse = adresse;
-		this.numTel = numTel;
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public String getNom() {
