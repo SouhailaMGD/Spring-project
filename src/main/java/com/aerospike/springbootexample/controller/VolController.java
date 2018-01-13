@@ -2,6 +2,7 @@ package com.aerospike.springbootexample.controller;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,7 +33,8 @@ public class VolController {
  
 	@RequestMapping(value = "/createVol", method = RequestMethod.POST)
 	public Vol createVol(@RequestBody Vol vol) {
-		vol.setId(100);
+		Random randomGenerator = new Random();
+		vol.setId(randomGenerator.nextInt(100));
 		return volService.saveVol(vol);
 	}
  

@@ -5,18 +5,36 @@ import org.springframework.data.annotation.Id;
 public class Client {
 
 	@Id
-	private long id;
+	private long id_client;
 	private String nom;
 	private String prenom;
 	private String adresse;
 	private String numTel;
-
-	public long getId() {
-		return id;
+	private int nbPlaces;
+	private long vol_id;
+	public long getVol_id() {
+		return vol_id;
 	}
 
-	public void setId(long id) {
-		this.id = id;
+	public void setVol_id(long vol_id) {
+		this.vol_id = vol_id;
+	}
+
+	public int getNbPlaces() {
+		return nbPlaces;
+	}
+
+	public void setNbPlaces(int nbPlaces) {
+		this.nbPlaces = nbPlaces;
+	}
+
+
+	public long getId_client() {
+		return id_client;
+	}
+
+	public void setId_client(long id_client) {
+		this.id_client = id_client;
 	}
 
 	public String getNom() {

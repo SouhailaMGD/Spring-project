@@ -8,7 +8,20 @@ public class Vol {
     private Integer id;
 	private String dateDepart;
 	private String dateArrivee;
-	private int duree;
+	private String heureDepart;
+	private String heureArrivee;
+	public String getHeureDepart() {
+		return heureDepart;
+	}
+	public void setHeureDepart(String heureDepart) {
+		this.heureDepart = heureDepart;
+	}
+	public String getHeureArrivee() {
+		return heureArrivee;
+	}
+	public void setHeureArrivee(String heureArrivee) {
+		this.heureArrivee = heureArrivee;
+	}
 	private int nombrePlaces;
 	//private boolean flag_reservation;
 	
@@ -32,12 +45,6 @@ public class Vol {
 		this.dateArrivee = dateArrivee;
 	}
 	
-	public int getDuree() {
-		return duree;
-	}
-	public void setDuree(int duree) {
-		this.duree = duree;
-	}
 	public int getNombrePlaces() {
 		return nombrePlaces;
 	}

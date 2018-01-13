@@ -1,6 +1,7 @@
 package com.aerospike.springbootexample.controller;
 
 import java.util.List;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -31,7 +32,8 @@ public class ReservationController {
  
 	@RequestMapping(value = "/createreservation", method = RequestMethod.POST)
 	public Reservation createreservation(@RequestBody Reservation reservation) {
-		reservation.setId(300);
+		Random randomGenerator = new Random();
+		reservation.setId(randomGenerator.nextInt(100));
 		return reservationService.saveReservation(reservation);
 	}
  

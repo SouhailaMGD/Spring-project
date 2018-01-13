@@ -8,7 +8,6 @@ public class Reservation {
 
 	@Id
 	private long id;
-	private String date;
 	private int nbPlaces;
 	
 	public long getId() {
@@ -28,13 +27,7 @@ public class Reservation {
 		this.nbPlaces = nbPlaces;
 	}
 
-	public String getDate() {
-		return date;
-	}
-
-	public void setDate(String date) {
-		this.date = date;
-	}
+	
 
 
 

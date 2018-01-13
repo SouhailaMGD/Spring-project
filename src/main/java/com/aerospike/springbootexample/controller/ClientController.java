@@ -1,6 +1,7 @@
 package com.aerospike.springbootexample.controller;
 
 import java.util.List;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,7 +33,8 @@ public class ClientController {
  
 	@RequestMapping(value = "/createclient", method = RequestMethod.POST)
 	public Client createclient(@RequestBody Client client) {
-		client.setId(400);
+		Random randomGenerator = new Random();
+		client.setId_client(randomGenerator.nextInt(100));
 		return clientService.saveClient(client);
 	}
  
