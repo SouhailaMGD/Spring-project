@@ -13,13 +13,14 @@ public class Vol {
 	private String VilleDepart;
 	private String VilleArrivee;
 	private int nombrePlaces;
-	//private Integer id_compagnie;
-	/*public Integer getId_compagnie() {
-		return id_compagnie;
+	private Integer compagnie_id;
+	
+	public Integer getCompagnie_id() {
+		return compagnie_id;
 	}
-	public void setId_compagnie(Integer id_compagnie) {
-		this.id_compagnie = id_compagnie;
-	}*/
+	public void setCompagnie_id(Integer compagnie_id) {
+		this.compagnie_id = compagnie_id;
+	}
 	public String getVilleDepart() {
 		return VilleDepart;
 	}

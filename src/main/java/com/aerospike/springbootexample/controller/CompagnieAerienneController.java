@@ -31,7 +31,12 @@ public class CompagnieAerienneController {
 	public CompagnieAerienne getcompagnieaerienne(@PathVariable("Id") Integer Id) {
 		return compagnieaerienneService.getCompagnieAerienneById(Id);
 	}
- 
+
+	@RequestMapping(value = "/getcompagnieaeriennebylogin/{login}", method = RequestMethod.GET)
+	public List<CompagnieAerienne> getcompagnieaeriennebylogin(@PathVariable("login") String login) 
+	{
+		return (List<CompagnieAerienne>)compagnieaerienneService.getByLogin(login);
+	}
 	@RequestMapping(value = "/createcompagnieaerienne", method = RequestMethod.POST)
 	public CompagnieAerienne createcompagnieaerienne(@RequestBody CompagnieAerienne compagnieaerienne) {
 		Random randomGenerator = new Random();

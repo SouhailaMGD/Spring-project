@@ -10,4 +10,5 @@ public interface CompagnieAerienneService {
 	CompagnieAerienne saveCompagnieAerienne(CompagnieAerienne vol);
 
     void deleteCompagnieAerienne(Integer id);
+    Iterable<CompagnieAerienne> getByLogin(String login);
 }
