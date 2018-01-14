@@ -10,6 +10,28 @@ public class Vol {
 	private String dateArrivee;
 	private String heureDepart;
 	private String heureArrivee;
+	private String VilleDepart;
+	private String VilleArrivee;
+	private int nombrePlaces;
+	//private Integer id_compagnie;
+	/*public Integer getId_compagnie() {
+		return id_compagnie;
+	}
+	public void setId_compagnie(Integer id_compagnie) {
+		this.id_compagnie = id_compagnie;
+	}*/
+	public String getVilleDepart() {
+		return VilleDepart;
+	}
+	public void setVilleDepart(String villeDepart) {
+		VilleDepart = villeDepart;
+	}
+	public String getVilleArrivee() {
+		return VilleArrivee;
+	}
+	public void setVilleArrivee(String villeArrivee) {
+		VilleArrivee = villeArrivee;
+	}
 	public String getHeureDepart() {
 		return heureDepart;
 	}
@@ -22,8 +44,6 @@ public class Vol {
 	public void setHeureArrivee(String heureArrivee) {
 		this.heureArrivee = heureArrivee;
 	}
-	private int nombrePlaces;
-	//private boolean flag_reservation;
 	
 	public Integer getId() {
 		return id;
@@ -51,11 +71,5 @@ public class Vol {
 	public void setNombrePlaces(int nombrePlaces) {
 		this.nombrePlaces = nombrePlaces;
 	}
-	/*public boolean isFlag_reservation() {
-		return flag_reservation;
-	}
-	public void setFlag_reservation(boolean flag_reservation) {
-		this.flag_reservation = flag_reservation;
-	}*/
 	
 }
